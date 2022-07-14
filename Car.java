@@ -16,7 +16,9 @@ public class Car {
         System.out.print("Gas Tank Capacity: ");
         double gasTankCapacity = sc.nextDouble();
         Car car = new Car(model, mpg, gasTankCapacity);
-
+    
+    }
+      
         // Refuel the car to its maximum gas capacity
         car.refuel(gasTankCapacity);
 
@@ -43,22 +45,29 @@ public class Car {
 
     public void drive(double distance) {
         // drive for distance (in miles), and update gas tank level accordingly (using mpg)
+   
+      
     }
 
     public void refuel(double gasAmount) {
         // Add gasAmount of gas to the gas tank
-    }
+   refuel(4);
+      }
 
     public double getGasRemaining() {
         // Return the number of gallons of gas currently in the gas tank
+    System.out.println(getGasRemaining());
     }
 
     public double getRange() {
         // Return the estimated amount of miles the car can drive based on current gas remaining and MPG (provided to constructor)
+   
+      System.out.println(getRange());
     }
 
     public String toString() {
         // Return a string representation of the car's current state.
         // Be sure to include range, model, and gas level.
+   
     }
 }
